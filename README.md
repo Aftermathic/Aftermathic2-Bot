@@ -1,3 +1,5 @@
+Created by Aftermathic using Python.
+
 YOU MUST HAVE PYTHON DOWNLOADED FOR THE BOT TO RUN!
 ______________________________________________________________________________________________________________________
 
