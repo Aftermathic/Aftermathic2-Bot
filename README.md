@@ -8,6 +8,10 @@ To run the bot you need these libraries:
 Discord.py 
 
 Requests
+
+os
+
+json
 ______________________________________________________________________________________________________________________
 
 If you don't have these, then put these commands in command prompt.
