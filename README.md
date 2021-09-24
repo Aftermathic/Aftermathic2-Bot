@@ -15,6 +15,10 @@ pip install discord.py
 pip install requests
 
 ______________________________________________________________________________________________________________________
-Once you have these downloaded, run the py file using command prompt.
+Once you have these downloaded, go inside the file and change the bot token to your own bot token so it runs on your bot.
+
+______________________________________________________________________________________________________________________
+
+Then run the file using command prompt with this command.
 
 python Aftermathic2.py
