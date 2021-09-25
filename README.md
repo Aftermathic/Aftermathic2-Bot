@@ -9,12 +9,12 @@ Discord.py
 
 Requests
 
-os
+OS
 
-json
+JSON
 ______________________________________________________________________________________________________________________
 
-If you don't have these, then put these commands in command prompt.(pip installing json and os will not work because they are mostly likely installed with Python.)
+If you don't have these, then put these commands in command prompt. (Pip installing JSON and OS will not work because they are mostly likely installed with Python.)
 
 pip install discord.py
 
