@@ -14,7 +14,7 @@ os
 json
 ______________________________________________________________________________________________________________________
 
-If you don't have these, then put these commands in command prompt.
+If you don't have these, then put these commands in command prompt.(pip installing json and os will not work because they are mostly likely installed with Python.)
 
 pip install discord.py
 
