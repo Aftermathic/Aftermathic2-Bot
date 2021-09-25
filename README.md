@@ -22,6 +22,7 @@ pip install discord.py
 
 pip install requests
 
+(I'm not sure if Random is installed with Python, but if the code doesn't work you might need to pip install Random.)
 pip install random
 ______________________________________________________________________________________________________________________
 Once you have these downloaded, go inside the file and change the bot token to your own bot token so it runs on your bot.
