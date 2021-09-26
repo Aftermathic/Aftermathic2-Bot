@@ -16,6 +16,8 @@ OS
 JSON
 
 Random
+
+Flask
 ______________________________________________________________________________________________________________________
 
 If you don't have these, then put these commands in command prompt. (Pip installing JSON, Random And OS will not work because they are mostly likely installed with Python.)
@@ -24,6 +26,7 @@ pip install discord.py
 
 pip install requests
 
+pip install flask
 ______________________________________________________________________________________________________________________
 Once you have these downloaded, go inside the file and change the bot token to your own bot token so it runs on your bot.
 
