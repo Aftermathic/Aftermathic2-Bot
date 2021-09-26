@@ -1,8 +1,12 @@
+#Libraries
 import discord
 import os
 import requests
 import random
 import json
+
+#24/7 thing
+from webserver import keep_alive
 
 client = discord.Client()
 
@@ -86,4 +90,7 @@ async def on_message(message):
     if message.content.startswith('$about'):
         await message.channel.send("I was created by Aftermathic#8216. He used the programming language: Python.\n\n A while ago, I was created with JavaScript, but since the main coder of the bot, StormyRaptor started to become inactive, Aftermathic attempted to recreate me in Java, C#, and JavaScript, but it didn't work.\n\nSo then he tried using Python, and it worked! So now you know how I'm alive!")
 
-client.run('put bot token in here')
+keep_alive() #keep bot alive
+
+#get token from discord developer portal
+client.run('put the bot token in here')
