@@ -32,6 +32,11 @@ Once you have these downloaded, go inside the file and change the bot token to y
 
 ______________________________________________________________________________________________________________________
 
+Next, create a UptimeRobot Account, and create a monitor.
+
+Then, use replit.com to get the website so the bot can stay alive
+
+______________________________________________________________________________________________________________________
 Then run the file using command prompt with this command.
 
 python Aftermathic2.py
