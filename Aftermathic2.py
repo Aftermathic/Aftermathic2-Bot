@@ -12,28 +12,49 @@ def get_quote():
   quote = json_data[0]['q'] + " -" + json_data[0]['a']
   return(quote)
 
-gameideas = [
-    "A game where you change gravity to pass really difficult levels!",
+random_gameideas = [
+    "where you fight aliens that are trying to take over earth!",
+    
+    "where you change gravity to pass really difficult levels!",
 
-    "A game where you can freely explore, bulid, destroy things, and play with other friends without any punishments!",
+    "where you can freely explore, bulid, destroy things, and play with other friends without any punishments!",
 
-    "A game where you try to get a better job to get money so you have a home and food in a ongoing pandemic! (No, I'm not talking about COVID-19.)",
+    "where you try to get a better job to get money so you have a home and food in a ongoing pandemic! (No, I'm not talking about COVID-19.)",
 
-    "A horror school game where you must answer hard math questions while avoiding a math teacher!",
+    "where you must answer hard math questions while avoiding a math teacher!",
 
-    "A game where you explore a abandoned school to get a cheat sheet for your exam, while avoiding zombies and ghouls.",
+    "where you explore a abandoned school to get a cheat sheet for your exam, while avoiding zombies and ghouls.",
 
-    "A game where you deliver pizzas, get money from it, and then upgrade your restaurant to get more money!",
+    "where you deliver pizzas, get money from it, and then upgrade your restaurant to get more money!",
 
-    "A game where you try to keep zombie pizzas from getting delivered to people!",
+    "where you try to keep zombie pizzas from getting delivered to people!",
 
-    "A game where you can fight against custom bosses by uploading your own 3D Object files and adding your own attacks!",
+    "where you can fight against custom bosses by uploading your own 3D Object files and adding your own attacks!",
 
-    "A game where you can explore space, find some aliens, and play fun minigames!",
+    "where you can explore space, find some aliens, and play fun minigames!",
 
-    "A game where you create a living being that evolves into many forms after a certain period of time, or when your creation learns something new!",
+    "where you create a living being that evolves into many forms after a certain period of time, or when your creation learns something new!",
 
-    "I don't have any game ideas right now, you can ask me later though!"
+    "where you must avoid monsters that appear due to a epidemic. (This idea came from the Netflix TV Show 'Sweet Home')",
+
+    "where you can fight against zombies with your friends.",
+
+    "where you have to create potions to cure people, if they don't get cured, they will try to murder you!",
+
+    "where you are deserted on a island, with a shark that's trying to kill you and materials that can help you make a raft to find land."
+]
+
+random_genres = [
+    "horror",
+    "RPG",
+    "adventure",
+    "difficult",
+    "unusual",
+    "fighting",
+    "violent",
+    "epic",
+    "block",
+    "science"
 ]
 
 @client.event
@@ -60,9 +81,9 @@ async def on_message(message):
         await message.channel.send(quote)
 
     if message.content.startswith('$gameidea'):
-        await message.channel.send(random.choice(gameideas))
+        await message.channel.send('A ' + random.choice(random_genres) + ' game ' + random.choice(random_gameideas))
 
     if message.content.startswith('$about'):
         await message.channel.send("I was created by Aftermathic#8216. He used the programming language: Python.\n\n A while ago, I was created with JavaScript, but since the main coder of the bot, StormyRaptor started to become inactive, Aftermathic attempted to recreate me in Java, C#, and JavaScript, but it didn't work.\n\nSo then he tried using Python, and it worked! So now you know how I'm alive!")
 
-client.run('put your bot token in here')
+client.run('put bot token in here')
