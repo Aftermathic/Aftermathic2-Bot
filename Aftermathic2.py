@@ -67,6 +67,11 @@ async def on_ready():
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name='your commands.'))
 
 @client.event
+async def on_member_join(member):
+    await member.create_dm()
+    await member.dm_channel.send(f'Hi {member.name}, welcome to the server!')
+
+@client.event
 async def on_message(message):
     if message.author == client.user:
         return
@@ -90,15 +95,24 @@ async def on_message(message):
     if message.content.startswith('$about'):
         await message.channel.send("I was created by Aftermathic#8216. He used the programming language: Python.\n\n A while ago, I was created with JavaScript, but since the main coder of the bot, StormyRaptor started to become inactive, Aftermathic attempted to recreate me in Java, C#, and JavaScript, but it didn't work.\n\nSo then he tried using Python, and it worked! So now you know how I'm alive!")
 
-    if message.content.startswith('$guess'):
-        await message.channel.send("Guess what number I'm thinking of. It's around 1-50")
-        number = random.randint(1, 50)
-        if message.content.startswith(number):
-            await message.channel.send("Nice job! You guessed the number.")
-        else:
-            await message.channel.send("Good try, but you didn't guess the number right. The number was " + number)
+    #TO DO: FIX THE FUCKING COMMAND
+    if message.content.startswith("$guess"):
+        user = message.author
+        await message.channel.send("Guess what number I'm thinking of! (This command might not work correctly yet.)")     
+        num = random.randint(1,50)
 
-keep_alive() #keep bot alive
+        playing = True
+
+        while (playing):
+            if message.author == user:
+                if message.content.startswith(str(num)):
+                    await message.channel.send("You got my number!")
+                else:
+                    await message.channel.send("You didn't get it, the number was: " + str(num))
+                    playing = False
+
+#24/7
+keep_alive()
 
 #get token from discord developer portal
-client.run('put bot token in here')
+client.run('bot-token')
