@@ -77,7 +77,7 @@ async def on_message(message):
         return
         
     if message.content.startswith('$help'):
-        await message.channel.send('Prefix: $\n\nCommands:\n$help - Description: I will tell you all of the commands and show you what I can do!\n\n$about - Description: I will tell you all about me!\n\n$ping - Description: When the command is used, I will reply "Pong!" back to you.\n\n$inspire - Description: I will find a inspiring quote to read to you, hopefully inspiring you, hence the command name.\n\n$gameidea - Description: I will tell you a good game idea if you feel like making a game, or trying to learn how to code!\n\n$guess - Description: You have to guess the number I\'m thinking of.\n\nOther Stuff:\n I will greet someone when they type "hello".')
+        await message.channel.send('Prefix: $\n\nCommands:\n$help - Description: I will tell you all of the commands and show you what I can do!\n\n$about - Description: I will tell you all about me!\n\n$ping - Description: When the command is used, I will reply "Pong!" back to you.\n\n$inspire - Description: I will find a inspiring quote to read to you, hopefully inspiring you, hence the command name.\n\n$gameidea - Description: I will tell you a good game idea if you feel like making a game, or trying to learn how to code!\n\nOther Stuff:\n I will greet someone when they type "hello".')
 
     if message.content.startswith('$ping'):
         await message.channel.send('Pong!')
@@ -94,22 +94,6 @@ async def on_message(message):
 
     if message.content.startswith('$about'):
         await message.channel.send("I was created by Aftermathic#8216. He used the programming language: Python.\n\n A while ago, I was created with JavaScript, but since the main coder of the bot, StormyRaptor started to become inactive, Aftermathic attempted to recreate me in Java, C#, and JavaScript, but it didn't work.\n\nSo then he tried using Python, and it worked! So now you know how I'm alive!")
-
-    #TO DO: FIX THE FUCKING COMMAND
-    if message.content.startswith("$guess"):
-        user = message.author
-        await message.channel.send("Guess what number I'm thinking of! (This command might not work correctly yet.)")     
-        num = random.randint(1,50)
-
-        playing = True
-
-        while (playing):
-            if message.author == user:
-                if message.content.startswith(str(num)):
-                    await message.channel.send("You got my number!")
-                else:
-                    await message.channel.send("You didn't get it, the number was: " + str(num))
-                    playing = False
 
 #24/7
 keep_alive()
