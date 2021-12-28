@@ -1,42 +1,11 @@
-Created by Aftermathic using Python.
+how to use:
 
-YOU MUST HAVE PYTHON DOWNLOADED FOR THE BOT TO RUN!
+import this thing into https://replit.com
 
-https://python.org
-______________________________________________________________________________________________________________________
+then make a secret variable in replit in your project.
 
-To run the bot you need these libraries:
+name it "bot_token"
 
-Discord.py 
+then set its value to your bot's token
 
-Requests
-
-OS
-
-JSON
-
-Random
-
-Flask
-______________________________________________________________________________________________________________________
-
-If you don't have these, then put these commands in command prompt. (Pip installing JSON, Random And OS will not work because they are mostly likely installed with Python.)
-
-pip install discord.py
-
-pip install requests
-
-pip install flask
-______________________________________________________________________________________________________________________
-Once you have these downloaded, go inside the file and change the bot token to your own bot token so it runs on your bot.
-
-______________________________________________________________________________________________________________________
-
-Next, create a UptimeRobot Account, and create a monitor.
-
-Then, use replit.com to get the website so the bot can stay alive
-
-______________________________________________________________________________________________________________________
-Then run the file using command prompt with this command.
-
-python Aftermathic2.py
+finally run it.
